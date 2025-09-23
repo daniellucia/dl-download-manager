@@ -4,6 +4,11 @@ namespace DL\DownloadManager;
 
 class Assets
 {
+    /**
+     * Agregamos assets
+     * @return void
+     * @author Daniel Lucia
+     */
     public function enqueue() {
         if (!is_admin()) {
             wp_enqueue_style(

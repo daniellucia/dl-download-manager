@@ -7,6 +7,11 @@ use League\Plates\Engine;
 class Post
 {
 
+    /**
+     * Reemplazamos la plantilla
+     * @param mixed $template
+     * @author Daniel Lucia
+     */
     public function loadCustomTemplate($template)
     {
         global $post;
@@ -22,6 +27,13 @@ class Post
         return $template;
     }
 
+    /**
+     * Renderizamos los datos de la descarga
+     * @param mixed $post
+     * @param mixed $versions
+     * @return void
+     * @author Daniel Lucia
+     */
     public function renderSingleTemplate($post, $versions)
     {
         $template_folder = plugin_dir_path(DL_DOWNLOAD_MANAGER_FILE) . 'src/Views/';

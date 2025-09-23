@@ -5,6 +5,11 @@ namespace DL\DownloadManager;
 class Download
 {
 
+    /**
+     * Manejador para descargar el fichero
+     * @return void
+     * @author Daniel Lucia
+     */
     public function handle()
     {
         $action = get_query_var('action');
