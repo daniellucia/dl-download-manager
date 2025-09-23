@@ -20,6 +20,7 @@ class Plugin
         add_action('template_redirect', [$download, 'handle']);
 
         $post = new Post();
-        add_filter('the_content', [$post, 'showAfterContent'], 200);
+        add_filter('single_template', [$post, 'loadCustomTemplate']);
+
     }
 }
