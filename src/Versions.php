@@ -11,7 +11,7 @@ class Versions
     /**
      * Constructor
      * @param mixed $post
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function __construct($post)
     {
@@ -39,7 +39,7 @@ class Versions
     /**
      * Ordenamos las versiones por versión (de mayor a menor)
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function orderVersions()
     {
@@ -55,7 +55,7 @@ class Versions
     /**
      * Obtenemos las versions de una descarga
      * @return array
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function get(): array
     {
@@ -68,7 +68,7 @@ class Versions
      * @param string $version
      * @param string $file_url
      * @return array{file: string, token: string, version: string}
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function create(string $attachment_id, string $version, string $file_url): array
     {
@@ -90,7 +90,7 @@ class Versions
      * Guardamos una version
      * @param array{file: string, token: string, version: string} $version
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function deleteByToken(string $token): void
     {
@@ -111,7 +111,7 @@ class Versions
      * Obtenemos la ruta del fichero asociado a un token
      * @param string $token
      * @return mixed|null
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function getFileByToken(string $token): ?string
     {
@@ -132,7 +132,7 @@ class Versions
      * Incrementa el contador de descargas de una versión
      * @param string $token
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function incrementDownloads(string $token): void
     {

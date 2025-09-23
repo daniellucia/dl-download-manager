@@ -10,7 +10,7 @@ class Post
     /**
      * Reemplazamos la plantilla
      * @param mixed $template
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function loadCustomTemplate($template)
     {
@@ -32,7 +32,7 @@ class Post
      * @param mixed $post
      * @param mixed $versions
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function renderSingleTemplate($post, $versions)
     {

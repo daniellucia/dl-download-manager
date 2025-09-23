@@ -8,7 +8,7 @@ class Download
     /**
      * Manejador para descargar el fichero
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function handle()
     {
@@ -62,7 +62,7 @@ class Download
      * @param int $post_id
      * @param string $file
      * @return string
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function generate_download_url($post_id, $token)
     {
@@ -80,7 +80,7 @@ class Download
      * Incrementa el contador de descargas de un post
      * @param int $post_id
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function increment(int $post_id): void
     {
@@ -91,7 +91,7 @@ class Download
     /**
      * Añade las reglas de reescritura para las URLs de descarga
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function add_rewrite_rules()
     {

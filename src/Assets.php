@@ -7,7 +7,7 @@ class Assets
     /**
      * Agregamos assets
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function enqueue() {
         if (!is_admin()) {

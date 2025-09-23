@@ -9,7 +9,7 @@ class CPT
     /**
      * Registramos cpt
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function register_post_type()
     {
@@ -29,7 +29,7 @@ class CPT
     /**
      * Registramos taxonomía
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function register_taxonomy()
     {
@@ -43,7 +43,7 @@ class CPT
     /**
      * Añadimos metabox
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function add_meta_boxes()
     {
@@ -62,7 +62,7 @@ class CPT
      * Añadimos contenido al metabox
      * @param mixed $post
      * @return void 1
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function render_meta_box($post)
     {
@@ -89,7 +89,7 @@ class CPT
     /**
      * Eliminamos una versión
      * @return never
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function removeVersion(): bool
     {
@@ -118,7 +118,7 @@ class CPT
      * Mostramos la tabla de versiones
      * @param mixed $versions
      * @return string
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     private function showVersionTable($versions)
     {
@@ -139,7 +139,7 @@ class CPT
      * Guardamos los datos del metabox
      * @param mixed $post_id
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function save_meta_boxes($post_id)
     {
@@ -184,7 +184,7 @@ class CPT
     /**
      * Añadimos el enctype al formulario de subida de archivos
      * @return void
-     * @author Daniel Lucia
+     * @author Daniel Lúcia
      */
     public function add_enctype($post)
     {
