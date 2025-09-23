@@ -1,4 +1,4 @@
-<?php use DL\DownloadManager\Download; ?>
+
 <table class="widefat" style="margin-bottom:20px;" id="dl_versions">
     <thead>
         <tr>
@@ -9,6 +9,7 @@
         </tr>
     </thead>
     <tbody>
+        <?php $downloads = 0; ?>
         <?php foreach ($versions as $version): ?>
             <tr>
                 <td><?php echo esc_html($version['version']); ?></td>
@@ -19,7 +20,12 @@
                         </a>
                     <?php endif; ?>
                 </td>
-                <td><?php echo intval($version['downloads'] ?? 0); ?></td>
+                <td>
+                    <?php 
+                    echo intval($version['downloads'] ?? 0); 
+                    $downloads += intval($version['downloads'] ?? 0);
+                    ?>
+                </td>
                 <td>
                     <?php
                     $remove_url = add_query_arg([
@@ -36,5 +42,14 @@
                 </td>
             </tr>
         <?php endforeach; ?>
+
+        <tfooter>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><strong><?php echo $downloads; ?></strong></td>
+                <td></td>
+            </tr>
+        </tfooter>
     </tbody>
 </table>
