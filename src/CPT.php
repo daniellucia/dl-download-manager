@@ -2,7 +2,7 @@
 
 namespace DL\DownloadManager;
 
-use Faker\Core\Version;
+use League\Plates\Engine;
 
 class CPT
 {
@@ -122,40 +122,13 @@ class CPT
     {
         global $post;
 
-        $response = '';
-        $response .= '<table class="widefat" style="margin-bottom:20px;" id="dl_versions">';
-        $response .= '<thead>
-                    <tr>
-                        <th>' . __('Version', 'dl-download-manager') . '</th>
-                        <th>' . __('Download', 'dl-download-manager') . '</th>
-                        <th width="50">' . __('Downloads', 'dl-download-manager') . '</th>
-                        <th width="90">' . __('Remove', 'dl-download-manager') . '</th>
-                    </tr>
-                  </thead>';
-        $response .= '<tbody>';
-        foreach ($versions as $version) {
-            $response .= '<tr>';
-            $response .= '<td>' . esc_html($version['version']) . '</td>';
-
-            $response .= '<td>';
-            if (!empty($version['attachment_id']) && !empty($version['token'])) {
-                $response .= '<a href="' . (new Download())->generate_download_url($post->ID, $version['token']) . '" target="_blank">' . __('Descargar', 'dl-download-manager') . '</a>';
-            }
-            $response .= '</td>';
-
-            $remove_url = add_query_arg([
-                'action' => 'dl_remove_version',
-                'post_id' => $post->ID,
-                'token' => $version['token'],
-                'nonce' => wp_create_nonce('dl_remove_version_' . $post->ID . '_' . $version['token'])
-            ], admin_url('admin-post.php'));
-
-            $response .= '<td>' . intval($version['downloads'] ?? 0) . '</td>';
-            $response .= '<td>' . '<a href="' . $remove_url . '" onclick="return confirm(\'' . esc_js(__('Are you sure you want to remove this version?', 'dl-download-manager')) . '\');">' . __('Remove', 'dl-download-manager') . '</a>' . '</td>';
-            $response .= '</tr>';
-        }
-        $response .= '</tbody>';
-        $response .= '</table>';
+        $template_folder = plugin_dir_path(DL_DOWNLOAD_MANAGER_FILE) . 'src/Views/';
+        $template = new Engine($template_folder);
+        $response = $template->render('admin-table', [
+            'versions' => $versions,
+            'download' => new Download(),
+            'post' => $post
+        ]);
 
         return $response;
     }
