@@ -22,5 +22,8 @@ class Plugin
         $post = new Post();
         add_filter('single_template', [$post, 'loadCustomTemplate']);
 
+        $assets = new Assets();
+        add_action('wp_enqueue_scripts', [$assets, 'enqueue']);
+
     }
 }
