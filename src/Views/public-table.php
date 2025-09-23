@@ -45,9 +45,13 @@
                         </td>
 
                         <td>
-                            <time datetime="<?php echo esc_attr($version['date_created']); ?>">
-                                <?php echo date_i18n(get_option('date_format'), strtotime($version['date_created'])); ?>
-                            </time>
+                            <?php if (isset($version['date_created'])): ?>
+                                <time datetime="<?php echo esc_attr($version['date_created']); ?>">
+                                    <?php echo date_i18n(get_option('date_format'), strtotime($version['date_created'])); ?>
+                                </time>
+                            <?php else: ?>
+                                <span class="dl-unavailable"><?php echo __('Not available', 'dl-download-manager'); ?></span>
+                            <?php endif; ?>
                         </td>
 
                         <?php do_action('dl_download_manager_after_version_row', $version, $post); ?>
