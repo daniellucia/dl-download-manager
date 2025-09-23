@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Download Manager\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-23 13:21+0000\n"
+"POT-Creation-Date: 2025-09-23 21:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,19 +16,40 @@ msgstr ""
 "X-Loco-Version: 2.8.0; wp-6.8.2; php-8.1.29\n"
 "X-Domain: dl-download-manager"
 
+#: src/Views/admin-table.php:39
+msgid "Are you sure you want to remove this version?"
+msgstr ""
+
+#: src/Views/public-table.php:3
+msgid "Available Downloads"
+msgstr ""
+
 #: src/CPT.php:37
 msgid "Categories"
+msgstr ""
+
+#: src/Views/single-download.php:42
+msgid "Categories:"
+msgstr ""
+
+#: src/Views/public-table.php:8
+msgid "Choose your preferred version to download:"
 msgstr ""
 
 #. Author of the plugin
 msgid "Daniel Lucia"
 msgstr ""
 
-#: src/CPT.php:109
+#: src/Views/public-table.php:18
+msgid "Date"
+msgstr ""
+
+#: src/Views/admin-table.php:19
 msgid "Descargar"
 msgstr ""
 
-#: src/CPT.php:98
+#: src/Views/admin-table.php:6 src/Views/public-table.php:16
+#: src/Views/public-table.php:36
 msgid "Download"
 msgstr ""
 
@@ -40,7 +61,7 @@ msgstr ""
 msgid "Download Manager"
 msgstr ""
 
-#: src/CPT.php:19 src/CPT.php:99
+#: src/CPT.php:19 src/Views/admin-table.php:7 src/Views/public-table.php:17
 msgid "Downloads"
 msgstr ""
 
@@ -56,8 +77,24 @@ msgstr ""
 msgid "New version"
 msgstr ""
 
+#: src/Views/public-table.php:66
+msgid "No downloads are currently available for this item."
+msgstr ""
+
+#: src/Views/public-table.php:39 src/Views/public-table.php:53
+msgid "Not available"
+msgstr ""
+
+#: src/Views/admin-table.php:8 src/Views/admin-table.php:40
+msgid "Remove"
+msgstr ""
+
 #. Description of the plugin
 msgid "Secure download manager with versioning"
+msgstr ""
+
+#: src/Views/public-table.php:73
+msgid "Source Code"
 msgstr ""
 
 #: src/CPT.php:77
@@ -68,7 +105,7 @@ msgstr ""
 msgid "URL de GitHub:"
 msgstr ""
 
-#: src/CPT.php:97
+#: src/Views/admin-table.php:5 src/Views/public-table.php:15
 msgid "Version"
 msgstr ""
 
@@ -78,4 +115,8 @@ msgstr ""
 
 #: src/CPT.php:82
 msgid "Version:"
+msgstr ""
+
+#: src/Views/public-table.php:77
+msgid "View on GitHub"
 msgstr ""
