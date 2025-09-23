@@ -1,0 +1,81 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Download Manager\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-23 13:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.2; php-8.1.29\n"
+"X-Domain: dl-download-manager"
+
+#: src/CPT.php:37
+msgid "Categories"
+msgstr ""
+
+#. Author of the plugin
+msgid "Daniel Lucia"
+msgstr ""
+
+#: src/CPT.php:109
+msgid "Descargar"
+msgstr ""
+
+#: src/CPT.php:98
+msgid "Download"
+msgstr ""
+
+#: src/CPT.php:52
+msgid "Download information"
+msgstr ""
+
+#. Name of the plugin
+msgid "Download Manager"
+msgstr ""
+
+#: src/CPT.php:19 src/CPT.php:99
+msgid "Downloads"
+msgstr ""
+
+#: src/CPT.php:83
+msgid "File:"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://www.daniellucia.es/"
+msgstr ""
+
+#: src/CPT.php:81
+msgid "New version"
+msgstr ""
+
+#. Description of the plugin
+msgid "Secure download manager with versioning"
+msgstr ""
+
+#: src/CPT.php:77
+msgid "There are no previous versions."
+msgstr ""
+
+#: src/CPT.php:86
+msgid "URL de GitHub:"
+msgstr ""
+
+#: src/CPT.php:97
+msgid "Version"
+msgstr ""
+
+#: src/CPT.php:73
+msgid "Version history"
+msgstr ""
+
+#: src/CPT.php:82
+msgid "Version:"
+msgstr ""
