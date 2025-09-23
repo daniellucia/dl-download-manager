@@ -91,10 +91,10 @@ class CPT
      * @return never
      * @author Daniel Lucia
      */
-    public function removeVersion()
+    public function removeVersion(): bool
     {
 
-        if ($_GET['action'] == 'dl_remove_version') {
+        if (isset($_GET['action']) && $_GET['action'] == 'dl_remove_version') {
 
             $post_id = (int) $_GET['post_id'];
             $token = sanitize_text_field($_GET['token']);
@@ -108,8 +108,10 @@ class CPT
             $versions->deleteByToken($token);
 
             wp_redirect(admin_url('post.php?post=' . $post_id . '&action=edit#dl_versions'));
-            exit;
+            return true;
         }
+
+        return false;
     }
 
     /**
