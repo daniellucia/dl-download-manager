@@ -25,9 +25,11 @@ $post_instance = new \DL\DownloadManager\Post();
                 <?php endif; ?>
 
                 <div class="entry-content">
-                    <?php the_content(); ?>
+                    <div class="dl-post-content">
+                        <?php the_content(); ?>
+                    </div>
                     
-                    <?php  $post_instance->renderSingleTemplate($post, $versions->get()); ?>
+                    <?php $post_instance->renderSingleTemplate($post, $versions->get()); ?>
                 </div>
 
                 <footer class="entry-footer">
