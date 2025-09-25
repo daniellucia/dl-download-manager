@@ -1,6 +1,6 @@
 <div class="dl-download-section">
 
-    <h3><?php echo __('Available Downloads', 'dl-download-manager'); ?></h3>
+    <h4><?php echo __('Available Downloads', 'dl-download-manager'); ?></h4>
 
     <?php if (!empty($versions)) : ?>
 
@@ -70,7 +70,7 @@
 
     <?php if (!empty($github_url)) : ?>
         <div class="dl-github-link">
-            <h4><?php echo __('Source Code', 'dl-download-manager'); ?></h4>
+            <h5><?php echo __('Source Code', 'dl-download-manager'); ?></h5>
             <p>
                 <a href="<?php echo esc_url($github_url); ?>" target="_blank" rel="noopener">
                     <span class="dashicons dashicons-admin-links"></span>
