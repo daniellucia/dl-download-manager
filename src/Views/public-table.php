@@ -31,7 +31,7 @@
                         <td>
                             <?php if (!empty($version['attachment_id']) && !empty($version['token'])): ?>
                                 <a href="<?php echo esc_url($download->generate_download_url($post->ID, $version['token'])); ?>"
-                                    class="dl-download-btn" target="_blank">
+                                    class="dl-download-btn" target="_blank" rel="nofollow">
                                     <span class="dashicons dashicons-download"></span>
                                     <?php echo __('Download', 'dl-download-manager'); ?>
                                 </a>
