@@ -12,6 +12,14 @@
     margin: 0 auto;
 }
 
+.dl-download-single .entry-thumbnail {
+    margin: 0 0 60px 0;
+}
+
+.dl-download-single .entry-thumbnail img {
+    width: 100%;
+}
+
 .dl-download-single .entry-content {
     display: flex;
     flex-direction: row;
